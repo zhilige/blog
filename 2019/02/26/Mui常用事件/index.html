@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://zhilige.github.io/blog">
-  <title>hahahah | Zhili GE的博客</title>
+  <title>MUI常用方法-事件 | Zhili GE的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="事件：通过获取容器id点击监听1document.getElementById(&apos;id&apos;).addEventListener(&apos;tap&apos;, function() &amp;#123;    &amp;#125;); 通过获取容器class点击监听1mui(&quot;.mui-content&quot;).on(&apos;tap&apos;, &apos;.className&apos;, function() &amp;#123;      &amp;#125;); 通过点击容器获取">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hahahah">
-<meta property="og:url" content="https://zhilige.github.io/blog/2019/02/21/hello-world/index.html">
+<meta property="og:title" content="MUI常用方法-事件">
+<meta property="og:url" content="https://zhilige.github.io/blog/2019/02/26/Mui常用事件/index.html">
 <meta property="og:site_name" content="Zhili GE的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="事件：通过获取容器id点击监听1document.getElementById(&apos;id&apos;).addEventListener(&apos;tap&apos;, function() &amp;#123;    &amp;#125;); 通过获取容器class点击监听1mui(&quot;.mui-content&quot;).on(&apos;tap&apos;, &apos;.className&apos;, function() &amp;#123;      &amp;#125;); 通过点击容器获取">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-22T04:12:05.775Z">
+<meta property="og:updated_time" content="2019-02-25T17:20:29.236Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hahahah">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="MUI常用方法-事件">
+<meta name="twitter:description" content="事件：通过获取容器id点击监听1document.getElementById(&apos;id&apos;).addEventListener(&apos;tap&apos;, function() &amp;#123;    &amp;#125;); 通过获取容器class点击监听1mui(&quot;.mui-content&quot;).on(&apos;tap&apos;, &apos;.className&apos;, function() &amp;#123;      &amp;#125;); 通过点击容器获取">
   
     <link rel="alternative" href="/atom.xml" title="Zhili GE的博客" type="application/atom+xml">
   
@@ -164,35 +164,34 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Mui常用事件" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hahahah
+      MUI常用方法-事件
     </h1>
   
 
         
-        <a href="/blog/2019/02/21/hello-world/" class="archive-article-date">
-  	<time datetime="2019-02-21T13:05:27.433Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-21</time>
+        <a href="/blog/2019/02/26/Mui常用事件/" class="archive-article-date">
+  	<time datetime="2019-02-25T17:11:23.237Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h3 id="事件："><a href="#事件：" class="headerlink" title="事件："></a>事件：</h3><h6 id="通过获取容器id点击监听"><a href="#通过获取容器id点击监听" class="headerlink" title="通过获取容器id点击监听"></a>通过获取容器id点击监听</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(<span class="string">'id'</span>).addEventListener(<span class="string">'tap'</span>, <span class="function"><span class="title">function</span></span>() &#123;    &#125;);</span><br></pre></td></tr></table></figure>
+<h6 id="通过获取容器class点击监听"><a href="#通过获取容器class点击监听" class="headerlink" title="通过获取容器class点击监听"></a>通过获取容器class点击监听</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mui(<span class="string">".mui-content"</span>).on(<span class="string">'tap'</span>, <span class="string">'.className'</span>, <span class="function"><span class="title">function</span></span>() &#123;      &#125;);</span><br></pre></td></tr></table></figure>
+<h6 id="通过点击容器获取对象的属性"><a href="#通过点击容器获取对象的属性" class="headerlink" title="通过点击容器获取对象的属性"></a>通过点击容器获取对象的属性</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mui(<span class="string">".mui-content"</span>).on(<span class="string">'tap'</span>, <span class="string">'.className'</span>, <span class="function"><span class="title">function</span></span>() &#123;  </span><br><span class="line">         var id = this.id;</span><br><span class="line">       //获取自定义属性</span><br><span class="line">         var numer = this.getAttribute(<span class="string">"numer "</span>);</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
+<h6 id="自定义事件"><a href="#自定义事件" class="headerlink" title="自定义事件"></a>自定义事件</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var opener = plus.webview.getWebviewById(<span class="string">"shipmentsXuma"</span>);//执行事件的页面id</span><br><span class="line">mui.fire(opener, <span class="string">'clearData-Xu'</span>);//页面执行方法</span><br></pre></td></tr></table></figure>
+<h6 id="自定义事件执行页面"><a href="#自定义事件执行页面" class="headerlink" title="自定义事件执行页面"></a>自定义事件执行页面</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">window.addEventListener(<span class="string">'clearData-Xu'</span>, <span class="keyword">function</span>(evt) &#123;</span><br><span class="line">          location.reload();</span><br><span class="line">	&#125;);</span><br></pre></td></tr></table></figure>
+<h6 id="页面传值"><a href="#页面传值" class="headerlink" title="页面传值"></a>页面传值</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mui.openWindow(&#123;</span><br><span class="line">		url: <span class="string">'lianluSelectGui.html'</span>,</span><br><span class="line">	        id: <span class="string">'lianluSelectGui'</span>,</span><br><span class="line">		extras: &#123;</span><br><span class="line">			lianluid: lianluid,</span><br><span class="line">			lianluNum: lianluNum</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;)</span><br></pre></td></tr></table></figure>
+<h6 id="传值接收页面"><a href="#传值接收页面" class="headerlink" title="传值接收页面"></a>传值接收页面</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var self = plus.webview.currentWebview();</span><br><span class="line">	var lianluNum = self.lianluNum;</span><br><span class="line">	var lianluid = self.lianluid;</span><br></pre></td></tr></table></figure>
+<h6 id="mui物理返回键重写"><a href="#mui物理返回键重写" class="headerlink" title="mui物理返回键重写"></a>mui物理返回键重写</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//物理键返回也会执行</span><br><span class="line">		var old_back = mui.back;</span><br><span class="line">        mui.back = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">           // 获取目标口窗口对象</span><br><span class="line">            var opener = plus.webview.getWebviewById(<span class="string">"familyHealth"</span>);</span><br><span class="line">		    mui.fire(opener, <span class="string">'clearTitle'</span>);</span><br><span class="line">                // 执行关闭</span><br><span class="line">                old_back();</span><br><span class="line">             &#125;;</span><br></pre></td></tr></table></figure>
 
       
 
@@ -272,7 +271,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://zhilige.github.io/blog/2019/02/21/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zhilige.github.io/blog/2019/02/26/Mui常用事件/" alt="微信分享二维码">
     </div>
 </div>
 
